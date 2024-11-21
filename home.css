@@ -1,0 +1,59 @@
+/* Main */
+main {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+
+/* Grid Galéria */
+.grid-gallery-container{
+    max-width: 900px;
+    background-color: #fff;
+    min-height: calc(100vh - 161px); /* 100vh mínusz header és footer */
+    margin: 0 auto;
+    display: flex; /* Tartalom pozicionálása */
+    flex-direction: column; /* Flexbox a belső igazításhoz */
+    justify-content: flex-start; /* Kezdődhet felülről */
+    padding: 20px;
+    box-shadow: 0 4px 10pc rgba(0, 0, 0, 0.05); /* Árnyék, ha szükséges */
+}
+
+.grid-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    
+    
+}
+
+.grid-gallery a {
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.grid-gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8px;
+}
+
+.grid-gallery a:hover img {
+    transform: scale(1.05);
+}
+
+/* Responsív tervezés */
+@media (max-width: 768px) {
+    .grid-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-gallery {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,161 @@
+/* Main */
+main {
+    flex: 1;
+    background-color: #f4f4f4;
+}
+/*Tab Style*/
+.tabs {
+    display: flex;
+}
+
+.tab {
+    flex: 0 0 150px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+/*Portfolio Container*/
+.portfolio-container{    
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 10px;
+    box-shadow: 0 4px 10pc rgba(0, 0, 0, 0.05);
+    line-height: 1.6;
+}
+
+/*Header Felxbox*/
+#personalinfo{
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+/*Profile Picture*/
+.profile_picture img{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-left: 20px;
+    margin-right: 75px;
+}
+
+/*Personal Info*/
+.personal-info{
+    flex-grow: 1;
+}
+
+.personal-info p{
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.personal-info a{
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.personal-info a:hover{
+    text-decoration: underline;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    flex: 0 0 150px;
+    margin-left: 10px;
+    cursor: pointer;
+    text-align: left;
+}
+
+.tab:nth-child(2) {
+    flex: 0 0 400px;
+}
+
+.imagelink-container {
+    display: flex;
+}
+
+.image {
+    width: 40px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/*Section Titles*/
+h2{
+    font-size: 1.6rem;
+    color: #333;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+    font-weight: 600;
+}
+
+/*Experience Section*/
+#experience .job{
+    margin-bottom: 20px;
+}
+
+#experience h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+}
+
+#experience .date{
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+#experience p{
+    padding-left: 20px;
+    color: #555;
+}
+
+/*Education Section*/
+#education .education-item{
+    margin-bottom: 20px;
+}
+
+#education h3{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#education .date{
+    font-size: 1rem;
+    padding-left: 20px;
+    color: #888;
+}
+
+/*Skill Section*/
+#skill{
+    margin-bottom: 30px;
+}
+
+.skill-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill{
+    background-color: #0073e6;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 1rem;
+    position: relative;
+}
