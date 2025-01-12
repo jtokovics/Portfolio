@@ -6,7 +6,7 @@ main {
 
 /* Grid Galéria */
 .grid-gallery-container{
-    max-width:1200px;
+    max-width:2000px;
     background-color: #fff;
     min-height: calc(100vh - 161px); /* 100vh mínusz header és footer */
     margin: 0 auto;
